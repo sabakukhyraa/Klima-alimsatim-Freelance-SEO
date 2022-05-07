@@ -16,7 +16,6 @@ body {
 .primary-nav {
     background-color: rgb(0, 16, 96);
     font-weight: bold;
-    min-width: 420px;
     /* padding: 2rem 0; */
     box-shadow: 5px 29px 50px 0px rgba(0,0,0,0.1);
     display: flex;
@@ -119,6 +118,7 @@ article {
 article h1{
     font-size: 5rem;
     color: rgb(28, 116, 175);
+    transition: all 300ms ease-in-out 200ms;
 }
 
 
@@ -135,7 +135,7 @@ article h4 {
     text-decoration: none;
     border: 0;
     cursor: pointer;
-    margin: 2rem 0;
+    margin-top: 2rem;
     padding: 12px 1rem;
     border-radius: 10rem;
     color: rgb(194, 226, 242);
@@ -176,12 +176,10 @@ article h4 {
 }
 
 
-
 .waist {
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
-
 
 
 .bodyinner {
@@ -201,19 +199,90 @@ aside h1 {
 
 
 
-
-@media (max-width: 550px) {
+/* @media (max-width: 550px) {
     .nav-list a {
         border: 6px transparent;
         border-radius: 7px;
         box-shadow: 5px 5px 50px 25px rgba(0,0,0,0.04);
     }
+} */
+
+
+.toggle-menu {
+    display: none;
+    cursor: pointer;
+    margin: 0 25px;
+}
+
+
+.bars {
+    display: block;
+    height: 3px;
+    width: 1.5rem;
+    margin: 5px auto;
+    border-radius: 1px;
+    background-color: rgb(150, 182, 243);
+    transition: all 300ms ease-in-out 200ms;
 }
 
 
 @media (max-width: 750px) {
     article {
         margin: 100px 0;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+
+    .toggle-menu.active .bars:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle-menu.active .bars:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .toggle-menu.active .bars:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .primary-nav {
+        justify-content: space-between;
+    }
+
+    article h1{
+        font-size: 3rem;
+        color: rgb(47, 122, 172);
+    }
+
+    .nav-list {
+        display: block;
+        position: fixed;
+        right: -100%;
+        top: 55px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(0, 16, 96, .6);
+        width: 100%;
+        text-align: end;
+        transition: all 500ms ease-in-out;
+    }
+
+    .nav-list.active {
+        right: 0;
+    }
+
+    .nav-list li {
+        margin: 1.5rem 10px;
+    }
+
+    .nav-list li a {
+        font-size: 1rem;
     }
 }
 
@@ -223,3 +292,21 @@ aside h1 {
         height: 300px;
     }
 }
+
+
+@media (max-width: 1150px) {
+    .primary-nav a {
+        font-size: 1rem;
+    }
+}
+
+
+
+@media (max-width: 915px) {
+    .primary-nav a {
+        font-size: .8rem;
+    }
+}
+
+
+
