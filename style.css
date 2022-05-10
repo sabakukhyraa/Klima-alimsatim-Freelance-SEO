@@ -6,6 +6,10 @@
     
 }
 
+html {
+    background-color: rgba(0, 16, 96, 1);
+}
+
 
 body {
     box-sizing: border-box;
@@ -14,7 +18,7 @@ body {
 
 
 .primary-nav {
-    background-color: rgb(0, 16, 96);
+    background-color: rgba(0, 16, 96, 1);
     font-weight: bold;
     /* padding: 2rem 0; */
     box-shadow: 5px 29px 50px 0px rgba(0,0,0,0.1);
@@ -48,7 +52,7 @@ a {
 }
 
 
-.nav-list a:after {
+.nav-list li a:after {
     content: "";
     position: absolute;
     background-color: rgb(150, 182, 243);
@@ -104,13 +108,15 @@ a {
 .articles {
     display: flex;
     align-items: center;
-    padding: 1rem 25vw;
+    justify-content: flex-start;
+    padding: 5rem 25vw;
 }
 
 
 
 article {
     text-align: start;
+    padding: 5rem 0;
 }
 
 
@@ -168,6 +174,14 @@ article h4 {
     background: linear-gradient(270deg, rgb(68, 112, 232) 0%, rgb(194, 238, 242)  100%);    
 }
 
+.info article ul li {
+    list-style: disc;
+}
+
+.info article ul {
+    color:rgb(1, 29, 167) ;
+}
+
 
 footer {
     background-color: rgb(0, 16, 96);
@@ -180,13 +194,27 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 
 .foot {
     flex-direction: column;
     text-align: start;
-    border:  1px rgb(38, 134, 198);
+    width: 33%;
+}
+
+
+.foot:nth-child(1) {
+    text-align: start;
+}
+
+.foot:nth-child(2) {
+    text-align: center;
+}
+
+.foot:nth-child(3) {
+    text-align: end;
 }
 
 
@@ -203,9 +231,65 @@ footer {
 
 
 iframe {
-    width: 400px;
-    height: 300px;
-    margin: 70px;
+    width: 100%;
+    height: clamp(9rem, 18vw, 18rem);
+}
+
+
+.down-foot li{
+    margin: 1rem 0;
+    padding: 0;
+}
+
+
+
+
+
+.whatsapp {
+    color: rgb(115, 174, 252);
+    background-color: rgb(1, 29, 167);
+    display: flex;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 400;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: 999px;
+    box-shadow: 0px 0px 30px 0px rgba(10, 106, 171, .65);
+}
+
+
+.whatsapp:after {
+    opacity: 0;
+}
+
+
+.whatsapp:hover {
+    box-shadow: 0px 0px 30px 0px rgba(10, 106, 171, 1);
+}
+
+
+.whatsapp img{
+    width: 2vw;
+    margin: 0 5px;
+}
+
+
+address .whatsapp {
+    border-radius: 0;
+    justify-content: center;
+    font-style: normal;
+}
+
+
+address {
+    text-align: center;
+}
+
+
+.author li{
+    color: rgb(10, 106, 171);
+    margin: 1rem;
 }
 
 /* aside {
@@ -245,6 +329,7 @@ aside h1 {
         box-shadow: 5px 5px 50px 25px rgba(0,0,0,0.04);
     }
 } */
+
 
 
 .toggle-menu {
@@ -306,9 +391,9 @@ aside h1 {
         top: 55px;
         gap: 0;
         flex-direction: column;
-        background-color: rgb(0, 16, 96, .6);
+        background-color: rgb(0, 16, 96, .8);
         width: 100%;
-        text-align: end;
+        text-align: center;
         transition: all 500ms ease-in-out;
     }
 
@@ -322,6 +407,29 @@ aside h1 {
 
     .nav-list li a {
         font-size: 1rem;
+    }
+
+
+
+    .flex-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        align-content: center;
+    }
+    
+    
+    .foot {
+        flex-direction: column;
+        border:  1px rgb(38, 134, 198);
+    }
+    
+    
+    .foot li {
+        margin: 0;
+        text-align: center;
     }
 }
 
@@ -337,6 +445,7 @@ aside h1 {
     .primary-nav a {
         font-size: 1rem;
     }
+
 }
 
 
@@ -347,5 +456,8 @@ aside h1 {
     }
 }
 
-
-
+@media (max-width: 1375px) {
+    .whatsapp {
+        padding: 8px 4px;
+    }
+}
