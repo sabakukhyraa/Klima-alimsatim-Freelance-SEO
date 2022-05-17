@@ -1,3 +1,4 @@
+// Responsive 
 document.addEventListener("DOMContentLoaded", init)
 const toggleMenu = document.querySelector(".toggle-menu")
 const navList = document.querySelector(".nav-list")
@@ -22,4 +23,7 @@ function init () {
     }
 }
 
-
+// Pop-up
+const moreButton1 = document.querySelector(".open-button-st")
+const moreButton2 = document.querySelector(".open-button-nd")
+const moreButton3 = document.querySelector(".open-button-rd")
