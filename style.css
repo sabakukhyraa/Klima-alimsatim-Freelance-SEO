@@ -6,6 +6,7 @@
     
 }
 
+
 html {
     background-color: rgba(0, 16, 96, 1);
 }
@@ -237,7 +238,7 @@ iframe {
 
 
 .down-foot li{
-    margin: 1rem 0;
+    margin-top: 1rem;
     padding: 0;
 }
 
@@ -289,7 +290,7 @@ address {
 
 .author li{
     color: rgb(10, 106, 171);
-    margin: 1rem;
+    margin: 0rem;
 }
 
 /* aside {
