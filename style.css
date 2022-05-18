@@ -351,6 +351,54 @@ aside h1 {
 }
 
 
+.pop-up {
+    background-color: rgb(0, 16, 96);
+    color: rgb(150, 182, 243);
+    margin: 2rem auto 0  auto;
+    /* text-align: center; */
+    border: 0;
+    width: 60%;
+    transition: all 400ms ease-in-out;
+    border-radius: 3rem;
+}
+
+
+.pop-up::backdrop {
+    background: rgb(0 0 0 / .6);
+}
+
+.pop-up::-webkit-scrollbar {
+    display: none;
+}
+
+
+.pop-up img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.pop-up p {
+    margin: 2rem;
+    text-align: start;
+}
+
+
+.pop-up article {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.pop-up h1 {
+    font-size: 3.5rem;
+    margin-top: 1rem;
+}
+
+
+/* Media Queries */
+
 @media (max-width: 750px) {
     article {
         margin: 100px 0;
@@ -435,11 +483,13 @@ aside h1 {
 }
 
 
+
 @media (min-width: 750px) {
     .articles {
         height: 300px;
     }
 }
+
 
 
 @media (max-width: 1150px) {
@@ -456,6 +506,8 @@ aside h1 {
         font-size: .8rem;
     }
 }
+
+
 
 @media (max-width: 1375px) {
     .whatsapp {
