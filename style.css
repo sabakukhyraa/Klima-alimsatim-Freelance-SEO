@@ -397,6 +397,44 @@ aside h1 {
 }
 
 
+
+.klima-info {
+    color: rgb(150, 182, 243);
+    padding: 12rem 5vw;
+
+}
+
+
+.klima-info h2 {
+    margin-bottom: 2rem;
+}
+
+
+
+.klima-info article p {
+    font-size: 20px;
+    margin: 1rem 0;
+}
+
+
+.klima-info article ul {
+    font-size: 12px;
+    color: rgb(115, 174, 252);
+    margin-left: 2rem;
+}
+
+
+.klima-info article ul li {
+    list-style-type: disc;
+    padding-left: 0;
+}
+
+
+.container-1 {
+    background: url(images/hakkimizda.png), rgba(rgba(45, 138, 243, .7));
+    
+}
+
 /* Media Queries */
 
 @media (max-width: 750px) {

@@ -37,7 +37,6 @@ const closeButton2 = document.querySelector(".close-button-nd")
 const closeButton3 = document.querySelector(".close-button-rd")
 
 
-
 moreButton1.addEventListener("click", () => {
     modal1.showModal();
 })
