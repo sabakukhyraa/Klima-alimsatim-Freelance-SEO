@@ -410,7 +410,7 @@ aside h1 {
 
 
 .pop-up h1 {
-    font-size: 3.5rem;
+    font-size: 2rem;
     margin-top: 1rem;
 }
 
@@ -458,11 +458,21 @@ aside h1 {
     
 }
 
+
+.heading {
+    color: rgb(158, 191, 248);
+}
+
+
+
+.wide-list li {
+    margin: 4rem 0;
+}
 /* Media Queries */
 
 @media (max-width: 750px) {
     article {
-        margin: 100px 0;
+        margin: 0px 0;
     }
 
     .nav-list {
