@@ -9,6 +9,24 @@
 
 html {
     background-color: rgb(14, 34, 133);
+    scrollbar-width: thin;
+    scrollbar-color: rgb(10, 38, 180) rgb(150, 182, 243);
+}
+
+
+html::-webkit-scrollbar {
+    width: .4rem;
+}
+
+
+html::-webkit-scrollbar-track {
+    background-color: rgb(1, 29, 167);
+    
+}
+
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgb(10, 106, 171);
 }
 
 
@@ -289,7 +307,7 @@ iframe {
 
 
 .whatsapp img{
-    width: 2vw;
+    width: 25px;
     margin: 0 5px;
 }
 
@@ -496,7 +514,11 @@ aside h1 {
     }
 
     .primary-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
         justify-content: space-between;
+        z-index: 999;
     }
 
     article h1{
@@ -511,7 +533,7 @@ aside h1 {
         top: 55px;
         gap: 0;
         flex-direction: column;
-        background-color: rgb(0, 16, 96, .8);
+        background-color: rgb(0, 16, 96, .85);
         width: 100%;
         text-align: center;
         transition: all 500ms ease-in-out;
@@ -566,6 +588,10 @@ aside h1 {
 @media (max-width: 1150px) {
     .primary-nav a {
         font-size: 1rem;
+    }
+
+    .klima-info {
+        padding: 15rem 5vw;
     }
 
 }
