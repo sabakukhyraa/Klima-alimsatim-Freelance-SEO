@@ -15,7 +15,7 @@ html {
 
 
 html::-webkit-scrollbar {
-    width: .4rem;
+    width: .5rem;
 }
 
 
@@ -155,6 +155,12 @@ article {
     padding: 5rem 0;
 }
 
+
+.sale p,
+.contact p,
+.info p {
+    color: rgb(0, 16, 96);
+}
 
 
 article h1{
@@ -329,44 +335,6 @@ address {
     margin: 0rem;
 }
 
-/* aside {
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-
-
-.waist {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-}
-
-
-.bodyinner {
-
-}
-
-
-aside li {
-    list-style: none;
-    margin: 5px 15px;
-}
-
-
-aside h1 {
-    font-size: 30px;
-} */
-
-
-
-/* @media (max-width: 550px) {
-    .nav-list a {
-        border: 6px transparent;
-        border-radius: 7px;
-        box-shadow: 5px 5px 50px 25px rgba(0,0,0,0.04);
-    }
-} */
-
 
 
 .toggle-menu {
@@ -395,16 +363,34 @@ aside h1 {
     border: 0;
     width: 60%;
     transition: all 400ms ease-in-out;
-    border-radius: 3rem;
+    border-radius: .8rem;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(10, 38, 180) rgb(150, 182, 243);
 }
+
+
+.pop-up::-webkit-scrollbar {
+    width: .2rem;
+    height: 70%;
+    border-radius: 100rem;
+}
+
+
+
+.pop-up::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+
+.pop-up::-webkit-scrollbar-thumb {
+    background-color: rgb(10, 106, 171);
+}
+
 
 
 .pop-up::backdrop {
     background: rgb(0 0 0 / .6);
-}
-
-.pop-up::-webkit-scrollbar {
-    display: none;
 }
 
 
@@ -471,21 +457,52 @@ aside h1 {
 }
 
 
-.container-1 {
-    background: url(images/hakkimizda.png), rgba(rgba(45, 138, 243, .7));
-    
-}
-
 
 .heading {
     color: rgb(158, 191, 248);
 }
 
 
+.about {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+    background-image: url(images/klimaBackgroundMixed.png);
+    background-size: 50%;
+}
+
+.about div {
+    margin: 0 5rem;
+}
+
+.about img {
+    width: 120%;
+}
+
+/* 
+.about h1 {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.5vw;
+} */
+
 
 .wide-list li {
     margin: 4rem 0;
 }
+
+
+/* .img-filter {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(10, 38, 180);
+    z-index: 999;
+} */
+
+
 /* Media Queries */
 
 @media (max-width: 750px) {
