@@ -1,9 +1,18 @@
+@keyframes animate-trans {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+
 * {
     padding: 0;
     margin: 0;
     /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
-    
+    font-family: 'Montserrat', sans-serif;   
 }
 
 
@@ -11,6 +20,7 @@ html {
     background-color: rgb(14, 34, 133);
     scrollbar-width: thin;
     scrollbar-color: rgb(10, 38, 180) rgb(150, 182, 243);
+    scroll-behavior: smooth;
 }
 
 
@@ -21,7 +31,6 @@ html::-webkit-scrollbar {
 
 html::-webkit-scrollbar-track {
     background-color: rgb(1, 29, 167);
-    
 }
 
 
@@ -163,6 +172,13 @@ article {
 }
 
 
+.sale article a {
+    color: rgb(40, 116, 230);
+    display: block;
+    margin-top: 1.2rem;
+}
+
+
 article h1{
     font-size: 5rem;
     color: rgb(48, 100, 179);
@@ -183,7 +199,7 @@ article h4 {
     text-decoration: none;
     border: 0;
     cursor: pointer;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     padding: 12px 1rem;
     border-radius: 10rem;
     color: rgb(194, 226, 242);
@@ -366,6 +382,8 @@ address {
     border-radius: .8rem;
     scrollbar-width: thin;
     scrollbar-color: rgb(10, 38, 180) rgb(150, 182, 243);
+    animation-name: animate-trans;
+    animation-duration: 1s;
 }
 
 

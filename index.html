@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="canonical" href="?"> -->
+    
 
 </head>
 
@@ -36,8 +37,8 @@
                 
                 <li><a href="index.html">ANA SAYFA</a></li>
                 <li><a href="#">İKİNCİ EL KLİMALAR</a></li>
-                <li><a href="pages/contact.html">İLETİŞİM</a></li>
-                <li><a href="pages/about.html">HAKKIMIZDA</a></li>
+                <li><a href="contact.html">İLETİŞİM</a></li>
+                <li><a href="about.html">HAKKIMIZDA</a></li>
                 <li><a href="https://wa.me/905334023692?text=Merhaba%20%C3%96mer%20Bey,%20ileti%C5%9Fim%20bilgilerinizi%20web%20sitenizden%20buldum." class="whatsapp" id="whatsapp"></a></li>
 
             </ul>
@@ -56,17 +57,17 @@
 
 
     <div class="articles sale">
-        <article><h1>Klima Alımı</h1><p><strong>Klimanızı bize satın!</strong> Klimanıza profesyoneller tarafından inceleme yapılıp değer biçilmesini istiyorsanız hemen arayın!
-            <i>+905334023692</i>
-        </p>
-            <button class="button open-button-nd">Daha Fazla</button>
+        <article><h1>Klima Alımı</h1><p><strong>Klimanızı bize satın!</strong> Klimanıza profesyoneller tarafından inceleme yapılıp değer biçilmesini istiyorsanız hemen arayın!</p>
+        
+            <button onclick="show('more-sale')" class="button open-button-nd">Daha Fazla</button>
+            <a href="tel:+905334023692">Bizi aramak için buraya tıklayın! || 05334023692</a>
         </article>
     </div>
 
 
 
     <div class="articles klima-info">
-        <a href="pages/info1.html">
+        <a href="info1.html">
         <article>
             <h2>Klimam neden evimi soğutmuyor?</h2>
             <p>
@@ -96,7 +97,7 @@
 
             <article><h1>İletişim</h1><p><strong>İstanbul</strong>'un her yerinden hizmetlerimizden faydalanabilir, aklınızdaki tüm soruları çekinmeden bizlere sorabilirsiniz.</p>
                 
-                <button class="button open-button-st">Daha Fazla</button>
+                <button onclick="show('more-contact')" class="button open-button-st">Daha Fazla</button>
             </article>
 
         </div>
@@ -107,7 +108,7 @@
 
 
     <div class="articles klima-info">
-        <a href="pages/info2.html">
+        <a href="info2.html">
             <article>
                 <h1>Klimam neden su sızdırıyor?</h1>
                 <p>
@@ -118,7 +119,7 @@
                 <p>
                     Çoğu modern klima sistemi bir iç ve dış ünite içerir. İç ünite, evinizdeki havayı soğutmak için dışarıdan gelen sıcak havayı içerisinde soğutan bir buharlaştırıcı bobini bulundurur. Bu bobinin üzerine dışarıdaki sıcak hava üflendikçe yoğuşma başlar. Kapağı kapalı bir tencerede yemek yaptığınızı ve sıcak yemeğin su buharının soğuk tencere kapağına temas edince kapak üzerinde su damlacıkları oluştuğunu hayal edin, buharlaştırıcı bobininize gerçekleşen de tam olarak budur. Nem oluştukça, yoğunlaşan su tahliye tavasından tahliye hattına akar. Bu hat, normalde evinizden dışarı çıkar ve klimanızın evinize su sızdırmaması gerekir. Maalesef klimanızın evinizin içine su sızdırdığı zamanlar olabilir ama paniğe hiç gerek yok. <br><br><i> Daha fazla butonuna tıklayarak klimanızın neden su sızdırdığını öğrenin.</i> 
                 </p>
-                <button class="button"><a style="color: rgb(152, 175, 236);" href="pages/info2.html">Daha Fazla</a></button>
+                <button class="button"><a style="color: rgb(152, 175, 236);" href="info2.html">Daha Fazla</a></button>
             </article>
         </a>
     </div>
@@ -138,7 +139,7 @@
                     <p>Tabii ki, klima servisimiz her türlü klima problemini çözebilir.</p>
                 </li>
             </ul>
-        <button class="button open-button-rd">Daha Fazla</button></article>
+        <button onclick="show('more-faq')" class="button open-button-rd">Daha Fazla</button></article>
 
     </div>   
         
@@ -159,7 +160,7 @@
             <ul class="foot">
                 <li><a href="#contact">İletişim</a></li>
                 <li><a href="#down-foot">Adresimiz</a></li>
-                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="about.html">Hakkımızda</a></li>
                 
             </ul>
 
@@ -199,7 +200,7 @@
     <section>
         <dialog class="pop-up" id="more-contact">           
 
-            <button class="button close-button-st">Kapat</button>
+            <button onclick="closeDialog('more-contact')" class="button close-button-st">Kapat</button>
             <h1>İletişim</h1>
             <article>
                 <p>
@@ -213,7 +214,7 @@
 
 
         <dialog class="pop-up" id="more-sale">
-            <button class="button close-button-nd">Kapat</button>
+            <button onclick="closeDialog('more-sale')" class="button close-button-nd">Kapat</button>
             <h1>Klima Alım</h1>
             <article>
                 <p><strong>Klima</strong>nızı değerinde <strong>satmak</strong> mı istiyorsunuz?</p>
@@ -224,7 +225,7 @@
 
 
         <dialog class="pop-up" id="more-faq">
-            <button class="button close-button-rd">Kapat</button>
+            <button onclick="closeDialog('more-faq')" class="button close-button-rd">Kapat</button>
             <h1>Sık Sorulan Sorular</h1>
             <article>
                 <ul>
@@ -238,35 +239,7 @@
         </dialog>
     </section>
 
-
-    <script>
-        // Responsive 
-        document.addEventListener("DOMContentLoaded", init)
-        const toggleMenu = document.querySelector(".toggle-menu")
-        const navList = document.querySelector(".nav-list")
-
-
-        toggleMenu.addEventListener("click", () => {
-            toggleMenu.classList.toggle("active")
-            navList.classList.toggle("active")
-        })
-
-
-        function init () {
-            let query = window.matchMedia("(max-width: 1375px)")
-            let query2 = window.matchMedia("(min-width: 750px)")
-
-            let whatsappContact = document.getElementById("whatsapp")
-
-            if (query.matches && query2.matches) {
-                whatsappContact.innerHTML = `<img src="images/wapp-icon.png" alt="Klima alım-satışçısı ile iletişim kurmak için Whatsapp görüşme linki"></img>`
-            } else {
-                whatsappContact.innerHTML = `<img src="images/wapp-icon.png" alt="Klima alım-satışçısı ile iletişim kurmak için Whatsapp görüşme linki">WhatsApp İletişim Hattı`
-            }
-        }
-    </script>
     <script src="index.js"></script>
-
 </body>
 
 </html>

@@ -18,7 +18,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=IBM+Plex+Sans:wght@100;200;300&family=Montserrat&family=PT+Sans&family=Raleway:wght@200;300;400&display=swap');
     </style>
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
     <!-- <link rel="canonical" href="?"> -->
 
 </head>
@@ -30,17 +30,15 @@
 
         <nav class="primary-nav">
             
-            <a href="../index.html"><img id="logo" src="../images/logo.png" alt="Klima Doktoru Logo"></a>
+            <a href="index.html"><img id="logo" src="images/logo.png" alt="Klima Doktoru Logo"></a>
 
             <ul role="list" class="nav-list">
                 
-                <li><a href="../index.html">ANA SAYFA</a></li>
+                <li><a href="index.html">ANA SAYFA</a></li>
                 <li><a href="#">İKİNCİ EL KLİMALAR</a></li>
-                <li><a href="../pages/contact.html">İLETİŞİM</a></li>
-                <li><a href="../pages/about.html">HAKKIMIZDA</a></li>
-                <li><a href="https://wa.me/905334023692?text=Merhaba%20%C3%96mer%20Bey,%20ileti%C5%9Fim%20bilgilerinizi%20web%20sitenizden%20buldum." class="whatsapp" id="whatsapp">
-                    <img src="../images/wapp-icon.png" alt="Klima alım-satışçısı ile iletişim kurmak için Whatsapp görüşme linki">
-                </a></li>
+                <li><a href="contact.html">İLETİŞİM</a></li>
+                <li><a href="about.html">HAKKIMIZDA</a></li>
+                <li><a href="https://wa.me/905334023692?text=Merhaba%20%C3%96mer%20Bey,%20ileti%C5%9Fim%20bilgilerinizi%20web%20sitenizden%20buldum." class="whatsapp" id="whatsapp"></a></li>
 
             </ul>
 
@@ -53,7 +51,6 @@
             </div>
 
         </nav>
-
 
     </header>
 
@@ -68,7 +65,7 @@
         <!-- WhatsApp Contact -->
         <address>
             <a class="whatsapp" href="https://wa.me/905334023692?text=Merhaba%20%C3%96mer%20Bey,%20ileti%C5%9Fim%20bilgilerinizi%20sitenizden%20buldum.">
-                <img src="../images/wapp-icon.png" alt="Klima alım-satışçısı ile iletişim kurmak için Whatsapp görüşme linki">
+                <img src="images/wapp-icon.png" alt="Klima alım-satışçısı ile iletişim kurmak için Whatsapp görüşme linki">
                 WhatsApp İletişim Hattı
             </a>
         </address>
@@ -76,30 +73,29 @@
         
         <nav class="flex-nav">
             <ul class="foot">
-                <li><a href="#">Adresimiz</a></li>
-                <li><a href="#">İletişim</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">LinkedIn</a></li>
-            </ul>
-
-            <ul class="foot">
-                <li><a href="#">Hakkımızda</a></li>
-                <li><a href="#">İkinci El Klimalar</a></li>
-                <li><a href="mailto:aliatabusiness@gmail.com">iletisim@klimadoktorum.com</a></li>
-                <li><a href="#">Klima Servisi</a></li>
+                <li><a href="#contact">İletişim</a></li>
+                <li><a href="#down-foot">Adresimiz</a></li>
+                <li><a href="about.html">Hakkımızda</a></li>
+                
             </ul>
 
             <ul class="foot">
                 <li><a href="#">Klimanızı Satın</a></li>
-                <li><a href="#">Markalar</a></li>
-                <li><a href="#">Sıkça Sorulan Sorular</a></li>
-                <li><a href="#">Klima Tamircisi</a></li>
+                <li><a href="#">İkinci El Klimalar</a></li>
+                <li><a href="https://wa.me/905334023692?text=Merhaba%20%C3%96mer%20Bey,%20ileti%C5%9Fim%20bilgilerinizi%20sitenizden%20buldum.">Klima Tamir Servisi</a></li>
+                
+            </ul>
+
+            <ul class="foot">
+                <li><a href="#">Markalarımız</a></li>
+                <li><a href="#faq">Sıkça Sorulan Sorular</a></li>
+                <li><a href="mailto:iletisim@klimadoktorum.com">Mail Adresimiz</a></li>
             </ul>
 
         </nav>
 
         
-        <ul class="down-foot">
+        <ul class="down-foot" id="down-foot">
             <li>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d287.8697264175794!2d28.75374047771472!3d41.06443691350276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa73f16468955%3A0x9911f1cd4c7fc7f!2sikinci%20El%20Klima%20Alan%20Yerler!5e0!3m2!1str!2str!4v1653380814945!5m2!1str!2str" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </li>
@@ -107,42 +103,14 @@
 
 
         <ul class="author">
-            <li>Created by <strong><em>Ali Kerem Ata</em></strong></li>
+            <li> Created by <i>Ali Kerem Ata</i></li>
             <li>Copyright © 2022</li>
         </ul>
         
 
     </footer>
 
-
-    
-    <script>
-                // Responsive 
-        document.addEventListener("DOMContentLoaded", init)
-        const toggleMenu = document.querySelector(".toggle-menu")
-        const navList = document.querySelector(".nav-list")
-
-
-        toggleMenu.addEventListener("click", () => {
-            toggleMenu.classList.toggle("active")
-            navList.classList.toggle("active")
-        })
-
-
-        function init () {
-            let query = window.matchMedia("(max-width: 1375px)")
-            let query2 = window.matchMedia("(min-width: 750px)")
-
-            let whatsappContact = document.getElementById("whatsapp")
-
-            if (query.matches && query2.matches) {
-                whatsappContact.innerHTML = `<img src="../images/wapp-icon.png" alt="Klima alım-satışçısı ile iletişim kurmak için Whatsapp görüşme linki"></img>`
-            } else {
-                whatsappContact.innerHTML = `<img src="../images/wapp-icon.png" alt="Klima alım-satışçısı ile iletişim kurmak için Whatsapp görüşme linki">WhatsApp İletişim Hattı`
-            }
-        }
-    </script>
-
+    <script src="index.js"></script>
 
 </body>
 </html>
