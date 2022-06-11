@@ -346,6 +346,11 @@ address {
 }
 
 
+.address {
+    margin: 2rem 0;
+}
+
+
 .author li{
     color: rgb(10, 106, 171);
     margin: 0rem;
@@ -408,6 +413,8 @@ address {
 
 
 .pop-up::backdrop {
+    animation-name: animate-trans;
+    animation-duration: 1s;
     background: rgb(0 0 0 / .6);
 }
 
@@ -481,31 +488,57 @@ address {
 }
 
 
-.about {
-    display: flex;
-    flex-direction: row;
-    padding: 3rem;
+.container-about {
     background-image: url(images/klimaBackgroundMixed.png);
     background-size: 50%;
 }
 
-.about div {
-    margin: 0 5rem;
+
+.about-tit {
+    font-size: 4rem;
+    color: rgb(138, 186, 248);
+    padding: 3rem;
 }
+
+
+.about {
+    display: flex;
+    /* justify-content: space-around; */
+    padding: 2rem 0;
+}
+
 
 .about img {
-    width: 120%;
+    margin: auto 3rem;
+    height: 20%;
+    width: 20%;
+    border-radius: 5rem;
 }
 
-/* 
-.about h1 {
-    font-size: 3vw;
-    text-align: center;
+
+.about-p {
+    text-align: start;
+    margin: 0 2rem;
 }
 
-.about p {
-    font-size: 1.5vw;
-} */
+
+.about-p h3 {
+    color: rgb(133, 184, 250);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-p p {
+    color: rgb(175, 209, 253);
+    font-size: 20px;
+}
+
+
+.omer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 
 .wide-list li {
@@ -608,6 +641,23 @@ address {
         margin: 0;
         text-align: center;
     }
+
+    .container-about {
+        margin-top: 3rem;
+    }
+
+    .about-tit {
+        padding: 0;
+        margin-top: 6rem;
+        font-size: 7vh;
+    }
+
+    /* .about img {
+        margin: 2rem auto;
+        width: 100%;
+    } */
+    
+    
 }
 
 
@@ -627,6 +677,28 @@ address {
 
     .klima-info {
         padding: 15rem 5vw;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        padding: 0;
+    }
+
+    .about-p {
+        text-align: center;
+        margin: 0 2rem 2rem 2rem;
+    }
+
+    .about img {
+        margin: 2rem auto;
+        width: 15%;
+    }
+
+
+    .about-tit {
+        padding: 0;
     }
 
 }
